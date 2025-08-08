@@ -72,4 +72,7 @@ while True:
     cv2.putText(img,f'FPS:{int(fps)}',(40,70),cv2.FONT_HERSHEY_SIMPLEX,1,(255,255,255),2)
 
     cv2.imshow('Video', img)
+
     cv2.waitKey(1)
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
